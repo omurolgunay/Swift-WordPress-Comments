@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comment View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CommentViewController" customModule="WordPressComment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CommentTableViewCell" customModule="WordPressComment" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H4e-ol-W7f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCellid" rowHeight="86" id="AB1-ne-oY2" customClass="CommentTableViewCell" customModule="WordPressComment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AB1-ne-oY2" id="6Dh-Uo-jah">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtZ-Ee-sWz">
+                                                    <rect key="frame" x="15" y="30" width="384" height="44.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0r-PV-F06">
+                                                    <rect key="frame" x="15" y="5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W98-lm-D64">
+                                                    <rect key="frame" x="357" y="5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="dtZ-Ee-sWz" secondAttribute="trailing" constant="15" id="1Q7-hT-Kn9"/>
+                                                <constraint firstAttribute="bottom" secondItem="dtZ-Ee-sWz" secondAttribute="bottom" constant="11" id="8mu-Ap-mzw"/>
+                                                <constraint firstItem="dtZ-Ee-sWz" firstAttribute="top" secondItem="l0r-PV-F06" secondAttribute="bottom" constant="4" id="GJp-Qh-279"/>
+                                                <constraint firstItem="l0r-PV-F06" firstAttribute="leading" secondItem="6Dh-Uo-jah" secondAttribute="leading" constant="15" id="I0m-t9-HqQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="W98-lm-D64" secondAttribute="trailing" constant="15" id="Ppm-CN-PCc"/>
+                                                <constraint firstItem="dtZ-Ee-sWz" firstAttribute="top" secondItem="6Dh-Uo-jah" secondAttribute="top" constant="30" id="SDq-Nl-xum"/>
+                                                <constraint firstItem="dtZ-Ee-sWz" firstAttribute="leading" secondItem="6Dh-Uo-jah" secondAttribute="leading" constant="15" id="V2V-55-o0L"/>
+                                                <constraint firstItem="W98-lm-D64" firstAttribute="top" secondItem="6Dh-Uo-jah" secondAttribute="top" constant="5" id="hoJ-QC-Diw"/>
+                                                <constraint firstItem="l0r-PV-F06" firstAttribute="top" secondItem="6Dh-Uo-jah" secondAttribute="top" constant="5" id="nkd-eg-Kid"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentAuthor" destination="l0r-PV-F06" id="6UH-0H-N9P"/>
+                                            <outlet property="commentDate" destination="W98-lm-D64" id="uVg-hj-QcL"/>
+                                            <outlet property="commentLabel" destination="dtZ-Ee-sWz" id="9ec-LL-UtB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yhR-py-fVV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="o2Z-ut-06t"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H4e-ol-W7f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EIZ-LU-Zib"/>
+                            <constraint firstItem="H4e-ol-W7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MG0-Yp-9E2"/>
+                            <constraint firstItem="H4e-ol-W7f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T84-Ev-4Lm"/>
+                            <constraint firstItem="H4e-ol-W7f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rtk-bG-irg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="H4e-ol-W7f" id="wh0-D2-pcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
