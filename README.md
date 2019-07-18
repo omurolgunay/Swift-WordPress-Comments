@@ -34,4 +34,3 @@ function kph_get_comments( WP_REST_Request $request) {
 ```
 - wp_comments tablosunun prefixi sizin farklı olabilir.
 - comment_post_ID hangi postun yorumlarını listelemek istiyorsanız o postun idsini yazın.
-- "DATE(CURRENT_DATE() + INTERVAL 4 DAY)"  Son 4 günde yazılan yorumları listelemek için.
